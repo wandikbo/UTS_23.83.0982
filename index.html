@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Tema Hitam Putih</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin-top: 56px; /* Space for navbar */
+      background-color: #ffffff;
+      color: #000000;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Dark Mode Styles */
+    .dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    .navbar {
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar-dark.bg-dark {
+      background-color: #1f1f1f;
+    }
+
+    /* Navbar Style */
+    .navbar a {
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ddd;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 80px 0;
+      transition: background-color 0.3s;
+    }
+
+    #home {
+      background-color: #f8f9fa;
+    }
+
+    #home.dark-mode {
+      background-color: #333;
+    }
+
+    .btn-primary {
+      transition: transform 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.1);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Modal Styles */
+    .modal-content {
+      background-color: #f8f9fa;
+      color: #000;
+      border-radius: 10px;
+    }
+
+    .modal-header {
+      background-color: #343a40;
+      color: #fff;
+    }
+
+    .modal-footer {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0);" onclick="toggleDarkMode()">Toggle Dark Mode</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="text-center">
+    <div class="container">
+        <body style="background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231007/pngtree-luminous-soccer-ball-floating-in-celestial-outer-space-abstract-3d-render-image_13556447.png'); background-size: cover; background-repeat: no-repeat;">
+      <h1 class="display-4">Selamat Datang di Website Kami!</h1>
+      <p class="lead">Website ini dibuat dengan tema hitam putih, responsif, dan animasi menarik.</p>
+      <button class="btn btn-primary btn-lg" onclick="showModal()">Pelajari Lebih Lanjut</button>
+      </body>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container text-center">
+      <h2>Tentang Kami</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow-lg">
+            <img src="https://kd-cibiru.upi.edu/media/tz_portfolio_plus/article/cache/visi-11_o.png" class="card-img-top" alt="About Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Visi Kami</h5>
+              <p class="card-text">Kami bertujuan untuk menjadi yang terbaik di industri dengan memberikan layanan yang lebih baik.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow-lg">
+            <img src="https://cubinakaryasejahtera.org/wp-content/uploads/2022/07/misi.png" class="card-img-top" alt="About Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Misi Kami</h5>
+              <p class="card-text">Misi kami adalah memberikan produk berkualitas tinggi yang dapat memberikan manfaat bagi pengguna.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow-lg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWpckqI-86UffUgjXiqA7D_chO1okt_y-qhA&s" class="card-img-top" alt="About Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Tujuan Kami</h5>
+              <p class="card-text">Kami berfokus untuk selalu berinovasi dan memberikan solusi terbaik kepada pelanggan kami.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="text-center">Hubungi Kami</h2>
+      <p class="text-center">Kami ingin mendengar dari Anda! Kirimkan pesan kepada kami di bawah ini.</p>
+
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nama Anda</label>
+          <input type="text" class="form-control" id="name" placeholder="Masukkan nama">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Anda</label>
+          <input type="email" class="form-control" id="email" placeholder="Masukkan email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Pesan Anda</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Tulis pesan"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 My Website | All Rights Reserved</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Informasi Website</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Website ini dibuat untuk memberikan informasi tentang produk dan layanan kami yang dapat membantu meningkatkan kualitas hidup Anda.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Toggle Dark Mode
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('navbar-dark');
+      navbar.classList.toggle('bg-dark');
+    }
+
+    // Show Modal
+    function showModal() {
+      const myModal = new bootstrap.Modal(document.getElementById('infoModal'));
+      myModal.show();
+    }
+  </script>
+</body>
+</html>
